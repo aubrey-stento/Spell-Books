@@ -1,13 +1,41 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <h1>Welcome to SpellBooks!</h1>
+      <!-- <h3>Please Login/Register to Continue</h3> -->
+        <router-link to="/auth">Login/Register</router-link>
+
+
     </div>
     <router-view/>
   </div>
 </template>
 
+// <script>
+
+// export default {
+//   name: 'Auth',
+//    beforeCreate() {
+//       if (this.$store.state.user._id) {
+//         this.$router.push({ name: 'spellbooks' })
+//       }
+//     },
+//     data() {
+//       return {
+//         showLoginForm: true
+//       }
+//     },
+//   components: {
+//     LoginForm,
+//     RegisterForm
+//   },
+//   methods: {
+//     logout() {
+//       this.$store.dispatch('logout')
+//     }
+//   }
+// }
+// </script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
